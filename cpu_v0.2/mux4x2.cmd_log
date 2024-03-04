@@ -1,0 +1,4 @@
+vhdtdtfi -lib work mux4x2.vhd -prj cpu_v0.1 -o mux4x2.spl -module mux4x2 -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux4x2.spl C:/Xilinx_proj/cpu_v0.1/mux4x2.sym 
+vhdtdtfi -lib work mux4x2.vhd -prj cpu_v0.1 -o mux4x2.spl -module mux4x2 -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w mux4x2.spl C:/Xilinx_proj/cpu_v0.1/mux4x2.sym 

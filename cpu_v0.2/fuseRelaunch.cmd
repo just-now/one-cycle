@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Xilinx_proj/cpu_v0.2/cpu_cpu_sch_tb_isim_beh.exe" -prj "C:/Xilinx_proj/cpu_v0.2/cpu_cpu_sch_tb_beh.prj" "work.cpu_cpu_sch_tb" 

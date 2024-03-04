@@ -1,0 +1,6 @@
+sch2hdl -sympath C:/Xilinx_proj/cpu_v0.1/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl reg_file_drc.vhf -w C:/Xilinx_proj/cpu_v0.1/reg_file.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym reg_file C:/Xilinx_proj/cpu_v0.1/reg_file.sch C:/Xilinx_proj/cpu_v0.1/reg_file.sym 
+sch2hdl -sympath C:/Xilinx_proj/cpu_v0.1/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl reg_file_drc.vhf -w C:/Xilinx_proj/cpu_v0.1/reg_file.sch 
+sch2hdl -sympath C:/Xilinx_proj/cpu_v0.1/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl reg_file_drc.vhf -w C:/Xilinx_proj/cpu_v0.1/reg_file.sch 
+sch2hdl -sympath C:/Xilinx_proj/cpu_v0.1/ipcore_dir -intstyle ise -family spartan3e -flat -suppress -vhdl reg_file_drc.vhf -w C:/Xilinx_proj/cpu_v0.1/reg_file.sch 
+sch2sym -intstyle ise -family spartan3e -w -refsym reg_file C:/Xilinx_proj/cpu_v0.1/reg_file.sch C:/Xilinx_proj/cpu_v0.1/reg_file.sym 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work PCR.vhd -prj cpu_v0.1 -o PCR.spl -module PCR -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w PCR.spl C:/Xilinx_proj/cpu_v0.1/PCR.sym 

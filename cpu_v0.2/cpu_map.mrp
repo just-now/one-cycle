@@ -1,0 +1,609 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'cpu'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Sep 04 11:42:51 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   27
+Logic Utilization:
+  Number of Slice Flip Flops:            17 out of   9,312    1%
+  Number of 4 input LUTs:                38 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:             22 out of   4,656    1%
+    Number of Slices containing only related logic:      22 out of      22 100%
+    Number of Slices containing unrelated logic:          0 out of      22   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          38 out of   9,312    1%
+  Number of bonded IOBs:                  3 out of     232    1%
+  Number of RAMB16s:                      1 out of      20    5%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.37
+
+Peak Memory Usage:  170 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:812 - Dangling pin <DOB0> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB1> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB8> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<XLXI_40/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.c
+   str/ramloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network XLXI_22/Q<10> has no load.
+INFO:LIT:395 - The above info message is repeated 2 more times for the following
+   (max. 5 shown):
+   XLXI_22/Q<8>,
+   XLXI_22/Q<9>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 150 block(s) removed
+   3 block(s) optimized away
+ 199 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "XLXI_22/Q<10>" is sourceless and has been removed.
+The signal "XLXI_22/Q<8>" is sourceless and has been removed.
+The signal "XLXI_22/Q<9>" is sourceless and has been removed.
+The signal "XLXI_41/N0" is sourceless and has been removed.
+The signal "XLXI_41/N1" is sourceless and has been removed.
+The signal "XLXI_1/XLXI_1/N0" is sourceless and has been removed.
+The signal "XLXI_1/XLXI_1/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "ALUOP<0>" is unused and has been removed.
+ Unused block "XLXI_45/ALUOP<0>1" (ROM) removed.
+The signal "ALUOP<1>" is unused and has been removed.
+ Unused block "XLXI_45/ALUOP<1>1" (ROM) removed.
+The signal "IR<0>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q0" (SFF) removed.
+The signal "IR<1>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q1" (SFF) removed.
+The signal "IR<2>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q2" (SFF) removed.
+The signal "IR<3>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q3" (SFF) removed.
+The signal "IR<4>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q4" (SFF) removed.
+The signal "IR<5>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q5" (SFF) removed.
+The signal "IR<6>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q6" (SFF) removed.
+The signal "IR<7>" is unused and has been removed.
+ Unused block "XLXI_22/I_Q7" (SFF) removed.
+The signal "IROMO<10>" is unused and has been removed.
+The signal "IROMO<8>" is unused and has been removed.
+The signal "IROMO<9>" is unused and has been removed.
+The signal "MemWR" is unused and has been removed.
+ Unused block "XLXI_45/MemWR1" (ROM) removed.
+The signal "N2" is unused and has been removed.
+ Unused block "XLXI_45/ResSrc_SW0" (ROM) removed.
+  The signal "XLXI_45/stage_2_1" is unused and has been removed.
+   Unused block "XLXI_45/stage_2_1" (SFF) removed.
+The signal "RAMO<0>" is unused and has been removed.
+The signal "RAMO<10>" is unused and has been removed.
+The signal "RAMO<11>" is unused and has been removed.
+The signal "RAMO<12>" is unused and has been removed.
+The signal "RAMO<13>" is unused and has been removed.
+The signal "RAMO<14>" is unused and has been removed.
+The signal "RAMO<15>" is unused and has been removed.
+The signal "RAMO<1>" is unused and has been removed.
+The signal "RAMO<2>" is unused and has been removed.
+The signal "RAMO<3>" is unused and has been removed.
+The signal "RAMO<4>" is unused and has been removed.
+The signal "RAMO<5>" is unused and has been removed.
+The signal "RAMO<6>" is unused and has been removed.
+The signal "RAMO<7>" is unused and has been removed.
+The signal "RAMO<8>" is unused and has been removed.
+The signal "RAMO<9>" is unused and has been removed.
+The signal "RDD1<0>" is unused and has been removed.
+The signal "RDD1<10>" is unused and has been removed.
+The signal "RDD1<11>" is unused and has been removed.
+The signal "RDD1<12>" is unused and has been removed.
+The signal "RDD1<13>" is unused and has been removed.
+The signal "RDD1<14>" is unused and has been removed.
+The signal "RDD1<15>" is unused and has been removed.
+The signal "RDD1<1>" is unused and has been removed.
+The signal "RDD1<2>" is unused and has been removed.
+The signal "RDD1<3>" is unused and has been removed.
+The signal "RDD1<4>" is unused and has been removed.
+The signal "RDD1<5>" is unused and has been removed.
+The signal "RDD1<6>" is unused and has been removed.
+The signal "RDD1<7>" is unused and has been removed.
+The signal "RDD1<8>" is unused and has been removed.
+The signal "RDD1<9>" is unused and has been removed.
+The signal "RDD2<0>" is unused and has been removed.
+The signal "RDD2<10>" is unused and has been removed.
+The signal "RDD2<11>" is unused and has been removed.
+The signal "RDD2<12>" is unused and has been removed.
+The signal "RDD2<13>" is unused and has been removed.
+The signal "RDD2<14>" is unused and has been removed.
+The signal "RDD2<15>" is unused and has been removed.
+The signal "RDD2<1>" is unused and has been removed.
+The signal "RDD2<2>" is unused and has been removed.
+The signal "RDD2<3>" is unused and has been removed.
+The signal "RDD2<4>" is unused and has been removed.
+The signal "RDD2<5>" is unused and has been removed.
+The signal "RDD2<6>" is unused and has been removed.
+The signal "RDD2<7>" is unused and has been removed.
+The signal "RDD2<8>" is unused and has been removed.
+The signal "RDD2<9>" is unused and has been removed.
+The signal "RFResOrImm" is unused and has been removed.
+ Unused block "XLXI_45/RegWR342" (ROM) removed.
+  The signal "XLXI_45/RegWR35" is unused and has been removed.
+   Unused block "XLXI_45/RegWR35" (ROM) removed.
+  The signal "XLXI_45/RegWR318" is unused and has been removed.
+   Unused block "XLXI_45/RegWR318" (ROM) removed.
+The signal "ResSrc" is unused and has been removed.
+ Unused block "XLXI_45/ResSrc" (ROM) removed.
+The signal "WD3O<0>" is unused and has been removed.
+ Unused block "XLXI_44/o<0>67" (ROM) removed.
+  The signal "XLXI_44/o<0>29" is unused and has been removed.
+   Unused block "XLXI_44/o<0>29" (ROM) removed.
+    The signal "XLXI_44/o<0>12" is unused and has been removed.
+     Unused block "XLXI_44/o<0>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<0>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<0>" (XOR) removed.
+      The signal "XLXI_4/R_cmp_eq0000" is unused and has been removed.
+       Unused block "XLXI_4/R_cmp_eq00002" (ROM) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<0>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<0>" (ROM) removed.
+    The signal "XLXI_45/ResSrc" is unused and has been removed.
+     Unused block "XLXI_45/ResSrc_1" (ROM) removed.
+The signal "WD3O<10>" is unused and has been removed.
+ Unused block "XLXI_44/o<10>67" (ROM) removed.
+  The signal "XLXI_44/o<10>29" is unused and has been removed.
+   Unused block "XLXI_44/o<10>29" (ROM) removed.
+    The signal "XLXI_44/o<10>12" is unused and has been removed.
+     Unused block "XLXI_44/o<10>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<10>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<10>" (XOR) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_cy<9>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<9>" (MUX) removed.
+        The signal "XLXI_4/Maddsub_R_addsub0000_cy<8>" is unused and has been removed.
+         Unused block "XLXI_4/Maddsub_R_addsub0000_cy<8>" (MUX) removed.
+          The signal "XLXI_4/Maddsub_R_addsub0000_cy<7>" is unused and has been removed.
+           Unused block "XLXI_4/Maddsub_R_addsub0000_cy<7>" (MUX) removed.
+            The signal "XLXI_4/Maddsub_R_addsub0000_cy<6>" is unused and has been removed.
+             Unused block "XLXI_4/Maddsub_R_addsub0000_cy<6>" (MUX) removed.
+              The signal "XLXI_4/Maddsub_R_addsub0000_cy<5>" is unused and has been removed.
+               Unused block "XLXI_4/Maddsub_R_addsub0000_cy<5>" (MUX) removed.
+                The signal "XLXI_4/Maddsub_R_addsub0000_cy<4>" is unused and has been removed.
+                 Unused block "XLXI_4/Maddsub_R_addsub0000_cy<4>" (MUX) removed.
+                  The signal "XLXI_4/Maddsub_R_addsub0000_cy<3>" is unused and has been removed.
+                   Unused block "XLXI_4/Maddsub_R_addsub0000_cy<3>" (MUX) removed.
+                    The signal "XLXI_4/Maddsub_R_addsub0000_cy<2>" is unused and has been removed.
+                     Unused block "XLXI_4/Maddsub_R_addsub0000_cy<2>" (MUX) removed.
+                      The signal "XLXI_4/Maddsub_R_addsub0000_cy<1>" is unused and has been removed.
+                       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<1>" (MUX) removed.
+                        The signal "XLXI_4/Maddsub_R_addsub0000_cy<0>" is unused and has been removed.
+                         Unused block "XLXI_4/Maddsub_R_addsub0000_cy<0>" (MUX) removed.
+                        The signal "XLXI_4/Maddsub_R_addsub0000_lut<1>" is unused and has been removed.
+                         Unused block "XLXI_4/Maddsub_R_addsub0000_lut<1>" (ROM) removed.
+                      The signal "XLXI_4/Maddsub_R_addsub0000_lut<2>" is unused and has been removed.
+                       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<2>" (ROM) removed.
+                    The signal "XLXI_4/Maddsub_R_addsub0000_lut<3>" is unused and has been removed.
+                     Unused block "XLXI_4/Maddsub_R_addsub0000_lut<3>" (ROM) removed.
+                  The signal "XLXI_4/Maddsub_R_addsub0000_lut<4>" is unused and has been removed.
+                   Unused block "XLXI_4/Maddsub_R_addsub0000_lut<4>" (ROM) removed.
+                The signal "XLXI_4/Maddsub_R_addsub0000_lut<5>" is unused and has been removed.
+                 Unused block "XLXI_4/Maddsub_R_addsub0000_lut<5>" (ROM) removed.
+              The signal "XLXI_4/Maddsub_R_addsub0000_lut<6>" is unused and has been removed.
+               Unused block "XLXI_4/Maddsub_R_addsub0000_lut<6>" (ROM) removed.
+            The signal "XLXI_4/Maddsub_R_addsub0000_lut<7>" is unused and has been removed.
+             Unused block "XLXI_4/Maddsub_R_addsub0000_lut<7>" (ROM) removed.
+          The signal "XLXI_4/Maddsub_R_addsub0000_lut<8>" is unused and has been removed.
+           Unused block "XLXI_4/Maddsub_R_addsub0000_lut<8>" (ROM) removed.
+        The signal "XLXI_4/Maddsub_R_addsub0000_lut<9>" is unused and has been removed.
+         Unused block "XLXI_4/Maddsub_R_addsub0000_lut<9>" (ROM) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<10>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<10>" (ROM) removed.
+The signal "WD3O<11>" is unused and has been removed.
+ Unused block "XLXI_44/o<11>67" (ROM) removed.
+  The signal "XLXI_44/o<11>29" is unused and has been removed.
+   Unused block "XLXI_44/o<11>29" (ROM) removed.
+    The signal "XLXI_44/o<11>12" is unused and has been removed.
+     Unused block "XLXI_44/o<11>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<11>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<11>" (XOR) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_cy<10>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<10>" (MUX) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<11>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<11>" (ROM) removed.
+The signal "WD3O<12>" is unused and has been removed.
+ Unused block "XLXI_44/o<12>67" (ROM) removed.
+  The signal "XLXI_44/o<12>29" is unused and has been removed.
+   Unused block "XLXI_44/o<12>29" (ROM) removed.
+    The signal "XLXI_44/o<12>12" is unused and has been removed.
+     Unused block "XLXI_44/o<12>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<12>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<12>" (XOR) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_cy<11>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<11>" (MUX) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<12>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<12>" (ROM) removed.
+The signal "WD3O<13>" is unused and has been removed.
+ Unused block "XLXI_44/o<13>67" (ROM) removed.
+  The signal "XLXI_44/o<13>29" is unused and has been removed.
+   Unused block "XLXI_44/o<13>29" (ROM) removed.
+    The signal "XLXI_44/o<13>12" is unused and has been removed.
+     Unused block "XLXI_44/o<13>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<13>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<13>" (XOR) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_cy<12>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<12>" (MUX) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<13>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<13>" (ROM) removed.
+The signal "WD3O<14>" is unused and has been removed.
+ Unused block "XLXI_44/o<14>67" (ROM) removed.
+  The signal "XLXI_44/o<14>29" is unused and has been removed.
+   Unused block "XLXI_44/o<14>29" (ROM) removed.
+    The signal "XLXI_44/o<14>12" is unused and has been removed.
+     Unused block "XLXI_44/o<14>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<14>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<14>" (XOR) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_cy<13>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<13>" (MUX) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<14>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<14>" (ROM) removed.
+The signal "WD3O<15>" is unused and has been removed.
+ Unused block "XLXI_44/o<15>67" (ROM) removed.
+  The signal "XLXI_44/o<15>29" is unused and has been removed.
+   Unused block "XLXI_44/o<15>29" (ROM) removed.
+    The signal "XLXI_44/o<15>12" is unused and has been removed.
+     Unused block "XLXI_44/o<15>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<15>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<15>" (XOR) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_cy<14>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_cy<14>" (MUX) removed.
+      The signal "XLXI_4/Maddsub_R_addsub0000_lut<15>" is unused and has been removed.
+       Unused block "XLXI_4/Maddsub_R_addsub0000_lut<15>" (ROM) removed.
+The signal "WD3O<1>" is unused and has been removed.
+ Unused block "XLXI_44/o<1>67" (ROM) removed.
+  The signal "XLXI_44/o<1>29" is unused and has been removed.
+   Unused block "XLXI_44/o<1>29" (ROM) removed.
+    The signal "XLXI_44/o<1>12" is unused and has been removed.
+     Unused block "XLXI_44/o<1>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<1>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<1>" (XOR) removed.
+The signal "WD3O<2>" is unused and has been removed.
+ Unused block "XLXI_44/o<2>67" (ROM) removed.
+  The signal "XLXI_44/o<2>29" is unused and has been removed.
+   Unused block "XLXI_44/o<2>29" (ROM) removed.
+    The signal "XLXI_44/o<2>12" is unused and has been removed.
+     Unused block "XLXI_44/o<2>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<2>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<2>" (XOR) removed.
+The signal "WD3O<3>" is unused and has been removed.
+ Unused block "XLXI_44/o<3>67" (ROM) removed.
+  The signal "XLXI_44/o<3>29" is unused and has been removed.
+   Unused block "XLXI_44/o<3>29" (ROM) removed.
+    The signal "XLXI_44/o<3>12" is unused and has been removed.
+     Unused block "XLXI_44/o<3>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<3>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<3>" (XOR) removed.
+The signal "WD3O<4>" is unused and has been removed.
+ Unused block "XLXI_44/o<4>67" (ROM) removed.
+  The signal "XLXI_44/o<4>29" is unused and has been removed.
+   Unused block "XLXI_44/o<4>29" (ROM) removed.
+    The signal "XLXI_44/o<4>12" is unused and has been removed.
+     Unused block "XLXI_44/o<4>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<4>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<4>" (XOR) removed.
+The signal "WD3O<5>" is unused and has been removed.
+ Unused block "XLXI_44/o<5>67" (ROM) removed.
+  The signal "XLXI_44/o<5>29" is unused and has been removed.
+   Unused block "XLXI_44/o<5>29" (ROM) removed.
+    The signal "XLXI_44/o<5>12" is unused and has been removed.
+     Unused block "XLXI_44/o<5>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<5>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<5>" (XOR) removed.
+The signal "WD3O<6>" is unused and has been removed.
+ Unused block "XLXI_44/o<6>67" (ROM) removed.
+  The signal "XLXI_44/o<6>29" is unused and has been removed.
+   Unused block "XLXI_44/o<6>29" (ROM) removed.
+    The signal "XLXI_44/o<6>12" is unused and has been removed.
+     Unused block "XLXI_44/o<6>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<6>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<6>" (XOR) removed.
+The signal "WD3O<7>" is unused and has been removed.
+ Unused block "XLXI_44/o<7>67" (ROM) removed.
+  The signal "XLXI_44/o<7>29" is unused and has been removed.
+   Unused block "XLXI_44/o<7>29" (ROM) removed.
+    The signal "XLXI_44/o<7>12" is unused and has been removed.
+     Unused block "XLXI_44/o<7>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<7>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<7>" (XOR) removed.
+The signal "WD3O<8>" is unused and has been removed.
+ Unused block "XLXI_44/o<8>67" (ROM) removed.
+  The signal "XLXI_44/o<8>29" is unused and has been removed.
+   Unused block "XLXI_44/o<8>29" (ROM) removed.
+    The signal "XLXI_44/o<8>12" is unused and has been removed.
+     Unused block "XLXI_44/o<8>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<8>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<8>" (XOR) removed.
+The signal "WD3O<9>" is unused and has been removed.
+ Unused block "XLXI_44/o<9>67" (ROM) removed.
+  The signal "XLXI_44/o<9>29" is unused and has been removed.
+   Unused block "XLXI_44/o<9>29" (ROM) removed.
+    The signal "XLXI_44/o<9>12" is unused and has been removed.
+     Unused block "XLXI_44/o<9>12" (ROM) removed.
+    The signal "XLXI_4/R_addsub0000<9>" is unused and has been removed.
+     Unused block "XLXI_4/Maddsub_R_addsub0000_xor<9>" (XOR) removed.
+The signal "XLXI_1/XLXN_10<0>" is unused and has been removed.
+ Unused block "XLXI_1/XLXI_5/o<0>1" (ROM) removed.
+  The signal "XLXI_45/N12" is unused and has been removed.
+   Unused block "XLXI_45/RegWR4" (ROM) removed.
+The signal "XLXI_1/XLXN_10<1>" is unused and has been removed.
+ Unused block "XLXI_1/XLXI_5/o<1>1" (ROM) removed.
+The signal "XLXI_1/XLXN_10<2>" is unused and has been removed.
+ Unused block "XLXI_1/XLXI_5/o<2>1" (ROM) removed.
+The signal "XLXI_1/XLXN_10<3>" is unused and has been removed.
+ Unused block "XLXI_1/XLXI_5/o<3>1" (ROM) removed.
+The signal "XLXI_45/RegWR338" is unused and has been removed.
+ Unused block "XLXI_45/RegWR338" (ROM) removed.
+The signal "XLXI_44/o<1>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<1>0" (ROM) removed.
+The signal "XLXI_44/o<0>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<0>0" (ROM) removed.
+The signal "XLXI_44/o<2>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<2>0" (ROM) removed.
+The signal "XLXI_44/o<3>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<3>0" (ROM) removed.
+The signal "XLXI_44/o<4>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<4>0" (ROM) removed.
+The signal "XLXI_44/o<5>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<5>0" (ROM) removed.
+The signal "XLXI_44/o<6>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<6>0" (ROM) removed.
+The signal "XLXI_44/o<9>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<9>0" (ROM) removed.
+The signal "XLXI_44/o<8>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<8>0" (ROM) removed.
+The signal "XLXI_44/o<7>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<7>0" (ROM) removed.
+The signal "XLXI_44/o<10>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<10>0" (ROM) removed.
+The signal "XLXI_44/o<11>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<11>0" (ROM) removed.
+The signal "XLXI_44/o<12>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<12>0" (ROM) removed.
+The signal "XLXI_44/o<13>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<13>0" (ROM) removed.
+The signal "XLXI_44/o<14>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<14>0" (ROM) removed.
+The signal "XLXI_44/o<15>0/O" is unused and has been removed.
+ Unused block "XLXI_44/o<15>0" (ROM) removed.
+The signal "XLXI_45/RegWR1_SW0/O" is unused and has been removed.
+ Unused block "XLXI_45/RegWR1_SW0" (ROM) removed.
+The signal "XLXI_45/RegWR1_SW1/O" is unused and has been removed.
+ Unused block "XLXI_45/RegWR1_SW1" (ROM) removed.
+The signal "XLXI_45/RegWR1_SW2/O" is unused and has been removed.
+ Unused block "XLXI_45/RegWR1_SW2" (ROM) removed.
+The signal "XLXI_45/RegWR1_SW3/O" is unused and has been removed.
+ Unused block "XLXI_45/RegWR1_SW3" (ROM) removed.
+The signal "XLXI_45/MemWR1_SW0/O" is unused and has been removed.
+ Unused block "XLXI_45/MemWR1_SW0" (ROM) removed.
+Unused block
+"XLXI_1/XLXI_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr
+/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram" (RAMB16_S36_S36) removed.
+Unused block "XLXI_1/XLXI_1/XST_GND" (ZERO) removed.
+Unused block "XLXI_1/XLXI_1/XST_VCC" (ONE) removed.
+Unused block "XLXI_22/I_Q10" (SFF) removed.
+Unused block "XLXI_22/I_Q8" (SFF) removed.
+Unused block "XLXI_22/I_Q9" (SFF) removed.
+Unused block
+"XLXI_41/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramlo
+op[0].ram.r/s3_noinit.ram/spram.ram" (RAMB16_S36_S36) removed.
+Unused block "XLXI_41/XST_GND" (ZERO) removed.
+Unused block "XLXI_41/XST_VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XLXI_1/XLXI_3
+GND 		XLXI_40/XST_GND
+VCC 		XLXI_40/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK_50                             | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| PCXX                               | IOB              | OUTPUT    | LVTTL                |       | 8        | SLOW |              |          | 0 / 0    |
+| RST                                | IBUF             | INPUT     | LVTTL                |       |          |      |              | PULLDOWN | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

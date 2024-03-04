@@ -1,0 +1,6 @@
+vhdtdtfi -lib work mux16x2.vhd -prj cpu_v0.1 -o mux16x2.spl -module mux16x2 -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux16x2.spl C:/Xilinx_proj/cpu_v0.1/mux16x2.sym 
+vhdtdtfi -lib work mux16x2.vhd -prj cpu_v0.1 -o mux16x2.spl -module mux16x2 -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mux16x2.vhd -prj cpu_v0.1 -o mux16x2.spl -module mux16x2 -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux16x2.spl C:/Xilinx_proj/cpu_v0.1/mux16x2.sym 
+vhdtdtfi -prj cpu_v0.1 -o C:/Xilinx_proj/cpu_v0.1/mux16x2.vhi -module mux16x2 -template C:/Xilinx_14/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux16x2.vhd 

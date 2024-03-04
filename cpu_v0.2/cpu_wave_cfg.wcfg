@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Xilinx_proj/cpu_v0.2/cpu_cpu_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cpu_cpu_sch_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/cpu_cpu_sch_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/clk_50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50</obj_property>
+      <obj_property name="ObjectShortName">clk_50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/sn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sn[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ir[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ir[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/pcinc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcinc</obj_property>
+      <obj_property name="ObjectShortName">pcinc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/pcin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcin</obj_property>
+      <obj_property name="ObjectShortName">pcin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/irin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">irin</obj_property>
+      <obj_property name="ObjectShortName">irin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/regwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">regwr</obj_property>
+      <obj_property name="ObjectShortName">regwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/ressrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ressrc</obj_property>
+      <obj_property name="ObjectShortName">ressrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/resorim" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resorim</obj_property>
+      <obj_property name="ObjectShortName">resorim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/memwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memwr</obj_property>
+      <obj_property name="ObjectShortName">memwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/z_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">z_flag</obj_property>
+      <obj_property name="ObjectShortName">z_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_li" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_li</obj_property>
+      <obj_property name="ObjectShortName">s_li</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_sw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_sw</obj_property>
+      <obj_property name="ObjectShortName">s_sw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_lw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_lw</obj_property>
+      <obj_property name="ObjectShortName">s_lw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_ori" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_ori</obj_property>
+      <obj_property name="ObjectShortName">s_ori</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_andi" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_andi</obj_property>
+      <obj_property name="ObjectShortName">s_andi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_sub" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_sub</obj_property>
+      <obj_property name="ObjectShortName">s_sub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_add" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_add</obj_property>
+      <obj_property name="ObjectShortName">s_add</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_j" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_j</obj_property>
+      <obj_property name="ObjectShortName">s_j</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_je" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_je</obj_property>
+      <obj_property name="ObjectShortName">s_je</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_cpu_sch_tb/UUT/XLXI_45/s_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_nop</obj_property>
+      <obj_property name="ObjectShortName">s_nop</obj_property>
+   </wvobject>
+</wave_config>

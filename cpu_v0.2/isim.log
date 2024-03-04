@@ -1,0 +1,121 @@
+ISim log file
+Running: C:\Xilinx_proj\cpu_v0.2\cpu_cpu_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Xilinx_proj/cpu_v0.2/cpu_cpu_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/XLXI_4/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 145 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 150 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 205 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 210 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 270 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/cpu_cpu_sch_tb/UUT/XLXI_41/U0/native_mem_module/mem_module/).
+at 335 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 340 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 385 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 390 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 435 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 440 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 485 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 490 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 535 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 540 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 635 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 640 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 695 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 700 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 825 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 830 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 875 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 880 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 925 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 930 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 975 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 980 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 145 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 150 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 205 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 210 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 270 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/cpu_cpu_sch_tb/UUT/XLXI_41/U0/native_mem_module/mem_module/).
+at 335 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 340 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 385 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 390 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 435 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 440 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 485 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 490 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 535 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 540 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 635 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 640 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 695 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 700 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 825 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 830 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 875 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 880 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 925 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 930 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0001, B write address: 0001
+
+at 975 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+
+at 980 ns(1), Instance /cpu_cpu_sch_tb/UUT/XLXI_1/XLXI_1/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A read address: 0010, B write address: 0010
+

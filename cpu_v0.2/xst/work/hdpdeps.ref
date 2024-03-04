@@ -1,0 +1,70 @@
+V3 48
+FL C:/Xilinx_proj/cpu_v0.2/ALU.vhd 2017/03/12.21:20:25 P.20131013
+EN work/ALU 1536050563 FL C:/Xilinx_proj/cpu_v0.2/ALU.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/ALU/Behavioral 1536050564 \
+      FL C:/Xilinx_proj/cpu_v0.2/ALU.vhd EN work/ALU 1536050563
+FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf 2017/06/21.22:13:41 P.20131013
+EN work/FD16RE_MXILINX_cpu 1536050575 FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD16RE_MXILINX_cpu/BEHAVIORAL 1536050576 \
+      FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf EN work/FD16RE_MXILINX_cpu 1536050575 \
+      CP FDRE
+EN work/reg_file_MUSER_cpu 1536050577 \
+      FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/reg_file_MUSER_cpu/BEHAVIORAL 1536050578 \
+      FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf EN work/reg_file_MUSER_cpu 1536050577 \
+      CP reg_file_dpram CP GND CP mux4x2
+EN work/cpu 1536050579 \
+      FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/cpu/BEHAVIORAL 1536050580 \
+      FL C:/Xilinx_proj/cpu_v0.2/cpu.vhf EN work/cpu 1536050579 \
+      CP reg_file_MUSER_cpu CP ALU CP mux16x2 CP FD16RE_MXILINX_cpu CP IROM CP RAM \
+      CP PCR CP CU CP BUF
+FL C:/Xilinx_proj/cpu_v0.2/CU.vhd 2017/09/17.16:22:08 P.20131013
+EN work/CU 1536050573 FL C:/Xilinx_proj/cpu_v0.2/CU.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CU/Behavioral 1536050574 \
+      FL C:/Xilinx_proj/cpu_v0.2/CU.vhd EN work/CU 1536050573
+FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/IROM.vhd 2017/03/12.21:43:59 P.20131013
+EN work/IROM 1536050567 FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/IROM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/IROM/IROM_a 1536050568 \
+      FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/IROM.vhd EN work/IROM 1536050567
+FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/RAM.vhd 2017/03/12.02:13:59 P.20131013
+EN work/RAM 1536050569 FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/RAM.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/RAM/RAM_a 1536050570 \
+      FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/RAM.vhd EN work/RAM 1536050569
+FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/reg_file_dpram.vhd 2017/03/12.02:11:51 P.20131013
+EN work/reg_file_dpram 1536050559 \
+      FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/reg_file_dpram.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg_file_dpram/reg_file_dpram_a 1536050560 \
+      FL C:/Xilinx_proj/cpu_v0.2/ipcore_dir/reg_file_dpram.vhd \
+      EN work/reg_file_dpram 1536050559
+FL C:/Xilinx_proj/cpu_v0.2/mux16x2.vhd 2017/03/11.13:50:01 P.20131013
+EN work/mux16x2 1536050565 FL C:/Xilinx_proj/cpu_v0.2/mux16x2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux16x2/Behavioral 1536050566 \
+      FL C:/Xilinx_proj/cpu_v0.2/mux16x2.vhd EN work/mux16x2 1536050565
+FL C:/Xilinx_proj/cpu_v0.2/mux4x2.vhd 2017/03/11.13:52:21 P.20131013
+EN work/mux4x2 1536050561 FL C:/Xilinx_proj/cpu_v0.2/mux4x2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux4x2/Behavioral 1536050562 \
+      FL C:/Xilinx_proj/cpu_v0.2/mux4x2.vhd EN work/mux4x2 1536050561
+FL C:/Xilinx_proj/cpu_v0.2/PCR.vhd 2017/03/12.12:29:30 P.20131013
+EN work/PCR 1536050571 FL C:/Xilinx_proj/cpu_v0.2/PCR.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PCR/Behavioral 1536050572 \
+      FL C:/Xilinx_proj/cpu_v0.2/PCR.vhd EN work/PCR 1536050571
+FL C:/Xilinx_proj/cpu_v0.2/reg_file.vhf 2017/06/21.22:13:41 P.20131013
+EN work/reg_file 1536050581 FL C:/Xilinx_proj/cpu_v0.2/reg_file.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/reg_file/BEHAVIORAL 1536050582 \
+      FL C:/Xilinx_proj/cpu_v0.2/reg_file.vhf EN work/reg_file 1536050581 \
+      CP reg_file_dpram CP GND CP mux4x2

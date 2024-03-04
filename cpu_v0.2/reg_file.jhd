@@ -1,0 +1,5 @@
+MODULE reg_file
+	SUBMODULE reg_file_dpram
+		INSTANCE XLXI_1
+	SUBMODULE mux4x2
+		INSTANCE XLXI_5

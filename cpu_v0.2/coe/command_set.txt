@@ -1,0 +1,28 @@
+
+     	ccccc|XXX|ADR1|ADR2     -- instruction
+     	jjjjj jjj jjjj jjjj     -- immediate value
+
+li   	00000 000 0000 0000     -- instruction
+        jjjjj jjj jjjj jjjj     -- $ADR1 = #j
+
+lw      00001 000 0000 0000     -- $ADR1 = MEM[#a]
+	aaaaa aaa aaaa aaaa      
+
+sw	00010 000 0000 0000     -- MEM[#a] = $ADR1
+	aaaaa aaa aaaa aaaa
+
+or	00100 000 adr1 adr2	-- adr1 = adr1 | adr2
+and     00101 000 adr1 adr2     -- adr1 = adr1 & adr2
+add     00110 000 adr1 adr2     -- adr1 = adr1 + adr2
+sub     00111 000 adr1 adr2     -- adr1 = adr1 - adr2
+
+j 	01000 000 0000 0000	-- pc = #a
+	aaaaa aaa aaaa aaaa
+
+jr      01001 000 adr1 0000     -- pc = $adr1
+
+je      01010 000 0000 0000     -- pc = !z ? pc + 1 : #a
+	aaaaa aaa aaaa aaaa
+
+nop     10000 000 0000 0000     -- pc = pc + 1 (nop)
+
